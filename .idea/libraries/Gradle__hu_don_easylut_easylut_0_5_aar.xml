@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: hu.don.easylut:easylut:0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/39024ff82b4a876af8b23f0c4b869d27/easylut-0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/39024ff82b4a876af8b23f0c4b869d27/easylut-0.5/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/hu.don.easylut/easylut/0.5/e8e74f1df79ba1a6a0d3662c46bfeb49435f3cd8/easylut-0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/hu.don.easylut/easylut/0.5/54a09f732f57cbb75dcfa7aeddc71006c1c4ad7e/easylut-0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

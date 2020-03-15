@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainImageView"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/operations_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/delete_imagebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/delete_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:elevation="10dp"/>
+
+        <ImageButton
+            android:id="@+id/download_imagebutton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/download_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:elevation="10dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/show_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/operations_layout"
+        android:layout_above="@+id/recycleviews_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/recycleviews_layout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/filterlist_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+        <FrameLayout
+            android:id="@+id/filteredimage_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filterlist_recyclerview"/>
+        <ProgressBar
+            android:id="@+id/progress_circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/filterlist_recyclerview"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
